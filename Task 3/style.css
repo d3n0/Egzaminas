@@ -59,3 +59,21 @@
   border-radius: 5px;
   background-color: #fff;
 }
+#output {
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+}
+#output > div {
+  display: flex;
+  justify-content: space-between;
+}
+#output > div:nth-child(odd) {
+  border-bottom: 1px solid darkgray;
+}
+#output > div:nth-child(even) {
+  border-bottom: 1px solid lightgray;
+}
+#output > div:last-child {
+  border: 0;
+}
