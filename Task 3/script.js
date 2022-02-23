@@ -23,7 +23,7 @@ document.getElementById('btn').addEventListener('click', () => {
     output.innerHTML = '';
     users.forEach(user => {
         let card = document.createElement('div');
-        card.innerHTML = `<span>User login: ${user.login}</span><span>Avatar URL: <a href='${user.avatar}' target='_blank'>${user.avatar}</a></span>`;
+        card.innerHTML = `<span><a href='${user.avatar}' target='_blank'><img src='${user.avatar}'></a><span class='login'>${user.login}</span></span>`;
         output.append(card);
     });
 });

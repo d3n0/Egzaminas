@@ -61,19 +61,29 @@
 }
 #output {
   display: flex;
-  flex-direction:column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 10px;
+}
+img {
+  width: 10vw;
+  object-fit: cover;
 }
 #output > div {
   display: flex;
   justify-content: space-between;
 }
-#output > div:nth-child(odd) {
-  border-bottom: 1px solid darkgray;
+div > span {
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
-#output > div:nth-child(even) {
-  border-bottom: 1px solid lightgray;
-}
-#output > div:last-child {
-  border: 0;
+.login {
+  position: absolute;
+  width: 100%;
+  background: rgba(157, 157, 157, 0.75);
+  z-index: 100;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%,-100%) translateY(-5px);
 }
