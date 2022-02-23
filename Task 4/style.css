@@ -27,3 +27,21 @@
   margin-top: 50px;
   color: #333;
 }
+#output {
+  display: flex;
+  max-width: 95%;
+  justify-items:flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+#output > div > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid lightgrey;
+}
+#output > div > ul > li {
+  display: inline-block;
+}
